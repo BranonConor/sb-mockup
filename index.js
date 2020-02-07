@@ -20,6 +20,7 @@ const hamburgerClick = (x) => {
     x.classList.toggle('change');
 }
 
+
 // Expand Mobile Menu
 hamburger.addEventListener('click', function() {
     expandMenu();
