@@ -52,8 +52,7 @@ a:hover::after {
     background: white;
 }
 .display-none {
-    opacity: 0;
-    transition: 0.5s;
+    display: none;
 }
 .navbar {
     display: flex;
@@ -107,6 +106,10 @@ a:hover::after {
     .navbar {
         display: none;
         overflow: hidden;
+    }
+    .display-none {
+        display: block;
+        opacity: 0;
     }
     .nav-mobile {
         width: 100vw;
