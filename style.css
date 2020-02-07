@@ -1,0 +1,115 @@
+/* -- GLOBAL STYLES -- */
+html {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+	background: black;
+	margin: 0;
+	max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+	transition: 0.5s;
+}
+.navMobile {
+    width: 100vw;
+    height: 0px;
+    transition: 0.4s ease-in;
+}
+
+.display-none {
+    display: none;
+}
+.revealNavMobile {
+    -webkit-transition: 0.5s; /* Safari 4+ */
+    -moz-transition: 0.5s; /* Fx 5+ */
+    -o-transition: 0.5s; /* Opera 12+ */
+    transition: 0.5s; /* IE 10+, Fx 29+, */
+    height: 30vh;
+    border-bottom: 1px solid white;
+}
+.mobileLink {
+    text-align: right;
+    padding: 5px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    color: #EEE;
+    z-index: 2;
+    max-width: 100vw;
+}
+.mobileLink:hover {
+    background-color: #8AB0AB;
+    color: black;
+    transition: 0.1s;
+}
+.mobileSocial {
+    display: flex;
+    justify-content: center;
+    transform: translateY(40px);
+}
+.mobileSocial a:hover {
+    color: #8AB0AB;
+    background-color: black;
+}
+/* ---- NAVBAR ---- */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: black;
+    margin: 0;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    background: black;
+}
+.navLeft {
+    font-size: 2rem;
+    padding: 0 20px;
+    border-right: 1px solid white;
+}
+.navLeft a:hover {
+    color: #8AB0AB;
+}
+.navCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 120px;
+}
+.navCenter a {
+    padding: 10px 10px 5px 10px;
+    border-bottom: 5px solid black;
+    height: 20px;
+    letter-spacing: 3px;
+}
+.navCenter a:hover {
+    border-bottom: 5px solid white;
+}
+.navRight {
+    display: flex;
+    padding-right: 25px;
+}
+.navRight li {
+    padding: 15px;
+    line-height: 20px;
+}
+.navRight i:hover {
+    color: #8AB0AB;
+}
