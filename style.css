@@ -196,6 +196,7 @@ h1 {
         width: 180px;
         height: 80px;
     }
+    /* Mobile Nav */
     .nav {
         display: flex;
         flex-direction: row-reverse;
@@ -300,6 +301,11 @@ h1 {
         -webkit-transform: rotate(45deg);
         transform: translateY(-10px) rotate(48deg);
     /*  translate(-9px, -12px) */
+    }
+    /* Hero Strip */
+    .hero-strip {
+        text-align: center;
+        background-image: url(hero-image-mobile.JPG);
     }
 }
 @media only screen and (max-width: 460px) {
