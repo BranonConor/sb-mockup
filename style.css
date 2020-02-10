@@ -335,6 +335,7 @@ h1 {
     .hero-strip {
         text-align: center;
         background-image: url(hero-image-mobile.JPG);
+        background-attachment: scroll;
     }
     /* About Strip */
     .about-strip {
