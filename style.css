@@ -52,7 +52,7 @@ a:hover::after {
 }
 .top-strip img {
     width: 250px;
-    height: auto;
+    height: 108px;
     margin-left: 20px;
 }
 .top-strip span {
@@ -138,20 +138,20 @@ a:hover::after {
 @media only screen and (max-width: 1200px) {
     .top-strip img {
         width: 220px;
-        height: auto;
+        height: 95px;
     }
 }
 @media only screen and (max-width: 800px) {
     .top-strip img {
         width: 200px;
-        height: auto;
+        height: 90px;
     }
 }
 @media only screen and (max-width: 640px) {
     /* Top Strip */
         .top-strip img {
         width: 180px;
-        height: auto;
+        height: 85px;
     }
     .nav {
         display: flex;
