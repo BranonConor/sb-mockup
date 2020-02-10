@@ -177,17 +177,46 @@ h1 {
     font-weight: bold;
     outline: none;
 }
+
+/* --- ABOUT STRIP --- */
+.about-strip {
+    background: #eee;
+    text-align: center;
+    padding: 75px 300px;
+}
+.about-strip img {
+    width: 100px;
+    height: auto;
+}
+
+
+
 /* --- MEDIA QUERIES --- */
 @media only screen and (max-width: 1200px) {
+    /* Top Strip */
     .top-strip img {
         width: 220px;
         height: 95px;
+    }
+    /* About Strip */
+    .about-strip {
+        padding: 75px 200px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    /* About Strip */
+    .about-strip {
+        padding: 75px 100px;
     }
 }
 @media only screen and (max-width: 800px) {
     .top-strip img {
         width: 200px;
         height: 90px;
+    }   
+    /* About Strip */
+    .about-strip {
+        padding: 75px 80px;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -307,6 +336,10 @@ h1 {
         text-align: center;
         background-image: url(hero-image-mobile.JPG);
     }
+    /* About Strip */
+    .about-strip {
+        padding: 75px 50px;
+    }
 }
 @media only screen and (max-width: 460px) {
     .top-strip {
@@ -318,5 +351,9 @@ h1 {
     }
     .strip-info {
         display: none;
+    }
+    /* About Strip */
+    .about-strip {
+        padding: 75px 20px;
     }
 }
