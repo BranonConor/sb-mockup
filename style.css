@@ -151,7 +151,7 @@ a:hover::after {
     /* Top Strip */
         .top-strip img {
         width: 180px;
-        height: 85px;
+        height: 80px;
     }
     .nav {
         display: flex;
@@ -264,6 +264,9 @@ a:hover::after {
     .top-strip {
         justify-content: center;
         padding: 0;
+    }
+    .top-strip img {
+        margin: 0;
     }
     .strip-info {
         display: none;
