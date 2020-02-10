@@ -40,6 +40,40 @@ a:hover::after {
     transition: 0.25s ease all;
     opacity: 1;
 }
+/* --- TOP STRIP --- */
+.top-strip {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    border-bottom: 2px solid black;
+}
+.top-strip img {
+    width: 15vw;
+    height: auto;
+    margin-left: 20px;
+}
+.top-strip span {
+    text-decoration: underline;
+}
+.strip-info {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 50px;
+    align-items: center;
+}
+.strip-info i {
+    padding-right: 10px;
+    transform: rotate(-30deg) scale(0.8);
+    transition: 0.5s
+}
+.strip-info:hover i {
+    transform: rotate(+10deg) scale(1.1);
+    transition: 0.5s
+}
+.strip-info:hover span {
+    color: orange;
+    cursor: pointer;
+}
 /* --- NAVIGATION --- */
 .nav {
     color: black;
@@ -89,6 +123,7 @@ a:hover::after {
     padding: 5px;
     letter-spacing: 3px;
     color: black;
+    position: relative;
     z-index: 2;
     max-width: 100vw;
 }
@@ -97,7 +132,24 @@ a:hover::after {
     transition: 0.1s;
 }
 
+@media only screen and (max-width: 1200px) {
+    .top-strip img {
+        width: 20vw;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .top-strip img {
+        width: 25vw;
+        height: auto;
+    }
+}
 @media only screen and (max-width: 640px) {
+    /* Top Strip */
+        .top-strip img {
+        width: 30vw;
+        height: auto;
+    }
     .nav {
         display: flex;
         flex-direction: row-reverse;
@@ -203,5 +255,19 @@ a:hover::after {
         -webkit-transform: rotate(45deg);
         transform: translateY(-10px) rotate(48deg);
     /*  translate(-9px, -12px) */
+    }
+}
+@media only screen and (max-width: 400px) {
+    .top-strip {
+        justify-content: center;
+        padding: 0;
+    }
+    .top-strip img {
+        width: 35vw;
+        height: auto;
+        margin: 0;
+    }
+    .strip-info {
+        display: none;
     }
 }
