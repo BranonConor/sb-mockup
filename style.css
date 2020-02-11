@@ -1,4 +1,4 @@
-/* -- GLOBAL STYLES -- */
+/* ------------- GLOBAL STYLES --------------- */
 html {
 	width: 100%;
     min-height: 100%;
@@ -47,7 +47,7 @@ h1 {
     padding: 0;
     margin: 0;
 }
-/* --- TOP STRIP --- */
+/* ----------------- TOP STRIP ------------------ */
 .top-strip {
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@ h1 {
     color: orange;
     cursor: pointer;
 }
-/* --- NAVIGATION --- */
+/* --------------- NAVIGATION ---------------- */
 .nav {
     color: black;
     width: 100%;
@@ -146,7 +146,7 @@ h1 {
     top: 100px;
 }
 */
-/* --- HERO STRIP --- */
+/* ------------ HERO STRIP -------------- */
 .hero-strip {
     background-image: url(hero-image.jpeg);
     background-repeat: no-repeat;
@@ -184,7 +184,7 @@ h1 {
     outline: none;
 }
 
-/* --- ABOUT STRIP --- */
+/* ----------- ABOUT STRIP ------------- */
 .about-strip {
     background: #eee;
     text-align: center;
@@ -195,7 +195,7 @@ h1 {
     height: auto;
 }
 
-/* --- SERVICES AND CONDITIONS TREATED --- */
+/* --------- SERVICES AND CONDITIONS TREATED ---------- */
 .conditions-strip {
     display: flex;
     flex-direction: column;
@@ -291,7 +291,60 @@ h1 {
     display: none;
 }
 
-/* --- MEDIA QUERIES --- */
+
+/* ---------- Testimonial strip ------------ */
+.testimonial-strip {
+    width: 100%;
+    height: 600px;
+    background-image: url(sb-paddler.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    color: white;
+}
+.testimonial-strip i {
+    color: white;
+    padding: 100px;
+    transition: 0.4 ease all;
+}
+.testimonial-strip i:hover {
+    color: orange;
+    transition: 0.4s;
+}
+.testimonial {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    transition: 0.5s ease all;
+}
+.active-quote {
+    opacity: 1;
+}
+.inactive-quote {
+    opacity: 0;
+}
+.testimonial h3 {
+    font-size: 2rem;
+}
+.testimonial p {
+    font-size: 1.25rem;
+}
+
+
+
+
+/* ---------------- MEDIA QUERIES ----------------- */
 @media only screen and (max-width: 1200px) {
     /* Top Strip */
     .top-strip img {
@@ -358,6 +411,10 @@ h1 {
         color: black;
         transform: none;
     }
+    /* Testimonials Strip */
+    .testimonial-strip i {
+        padding: 50px;
+    }
 }
 @media only screen and (max-width: 830px) {
     .top-strip img {
@@ -367,6 +424,10 @@ h1 {
     /* About Strip */
     .about-strip {
         padding: 75px 80px;
+    }
+    /* Testimonials Strip */
+    .testimonial-strip i {
+        padding: 25px;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -490,6 +551,16 @@ h1 {
     /* About Strip */
     .about-strip {
         padding: 75px 50px;
+    }
+    /* Testimonials Strip */
+    .testimonial-strip i {
+        font-size: 2.5rem;
+    }
+    .testimonial h3 {
+        font-size: 1.5rem;
+    }
+    .testimonial p {
+        font-size: 1rem;
     }
 }
 @media only screen and (max-width: 460px) {
