@@ -320,6 +320,7 @@ h1 {
 .testimonial-strip i:hover {
     color: orange;
     transition: 0.4s;
+    cursor: pointer;
 }
 .testimonial {
     width: 50%;
@@ -433,7 +434,7 @@ h1 {
 }
 @media only screen and (max-width: 640px) {
     /* Top Strip */
-        .top-strip img {
+    .top-strip img {
         width: 180px;
         height: 80px;
     }
