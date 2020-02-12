@@ -386,6 +386,7 @@ h1 {
         padding-top: 20px;
         box-shadow: 0px 2px 4px 1px rgba(8,8,8, 0.3);
         border-radius: 9px;
+        background-color: white;
     }
     .card1 h3 {
         position: relative;
