@@ -456,7 +456,7 @@ label {
     border: 1px solid white;
     height: 60px;
     margin: 20px;
-    background: orange;
+    background: rgb(228, 171, 65);
     color: white;
     font-weight: bold;
     transition: 0.4s ease all;
@@ -693,6 +693,10 @@ label {
     }
     .testimonial p {
         font-size: 1rem;
+    }
+    /* Contact Form */
+    fieldset {
+        width: 300px;
     }
 }
 @media only screen and (max-width: 460px) {
