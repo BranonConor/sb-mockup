@@ -467,7 +467,65 @@ label {
     cursor: pointer;
     font-size: 1rem;
 }
-
+/* -------------- FOOTER ------------ */
+.footer-top {
+    width: 100%;
+    height: 75px;
+    background: #eee;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top img {
+    width: 60px;
+    height: 60px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #343434;
+    padding: 20px 0;
+}
+.footer div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer a, .footer p {
+    color: white;
+    font-size: 0.8rem;
+}
+.footer-info {
+    text-align: left;
+    align-items: flex-start;
+}
+.footer .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.footer-social i {
+    font-size: 1.5rem;
+    transition: 0.3s ease all;
+}
+.footer-social a::after {
+    display: none;
+}
+.footer-social i:hover {
+    color: orange;
+}
+.footer-office p {
+    text-align: right;
+}
+.footer .footer-title {
+    letter-spacing: 3px;
+    color: orange;
+}
 
 
 /* ---------------- MEDIA QUERIES ----------------- */
@@ -560,6 +618,17 @@ label {
     .insurance-carousel i {
         width: 110px;
         height: 70px;
+    }
+    /* Footer */
+    .footer a, .footer p {
+        color: white;
+        font-size: 0.6rem;
+    }
+    .footer-social {
+        
+    }
+    .footer-social i {
+        font-size: 1.2rem;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -698,6 +767,15 @@ label {
     fieldset {
         width: 300px;
     }
+    /* Footer */
+    .footer {
+        padding: 20px 10px;
+    }
+    .footer .footer-social {
+        display: block;
+        padding: 0 20px;
+    }
+    
 }
 @media only screen and (max-width: 460px) {
     .top-strip {
@@ -713,5 +791,12 @@ label {
     /* About Strip */
     .about-strip {
         padding: 75px 20px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    /* Footer */
+    .footer div {
+        justify-content: flex-start;
+        height: 150px;
     }
 }
