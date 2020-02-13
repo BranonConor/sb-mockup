@@ -421,7 +421,7 @@ fieldset {
     width: 45%;
 }
 input, select, textarea {
-    width: 90%;
+    width: 100%;
     border: none;
     background: none;
     outline: none;
