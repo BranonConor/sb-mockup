@@ -463,6 +463,8 @@ label {
 }
 /* -------------- FOOTER ------------ */
 .footer {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -684,9 +686,17 @@ label {
     }
     .footer-bottom {
         flex-direction: column;
-        padding: 20px 0;
+        height: auto;
+        padding: 12px 0;
     }
-    .bottom-links, .copyright {
+    .copyright {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+    .bottom-links {
         flex-direction: column;
         text-align: center;
         align-items: center;
@@ -695,6 +705,7 @@ label {
     }
     .bottom-links p {
         padding: 0 2%;
+        text-decoration: underline;
     }
 }
 @media only screen and (max-width: 640px) {
