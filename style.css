@@ -1,3 +1,10 @@
+
+/* ----------- VARIABLES ----------- */
+:root {
+    --main-accent-color: #FB7718;
+}
+
+
 /* ------------- GLOBAL STYLES --------------- */
 html {
 	width: 100%;
@@ -25,7 +32,7 @@ a::after {
     content: '';
     width: 0;
     height: 2px;
-    background: orange;
+    background: var(--main-accent-color);
     transition: width .6s;
     position: absolute;
     left: -50%;
@@ -34,7 +41,7 @@ a::after {
     transition: 0.5s ease all;
 }
 a:hover {
-    color: orange;
+    color: var(--main-accent-color);
 }
 a:hover::after {
     width: 100%;
@@ -74,7 +81,7 @@ a:hover::after {
     transition: 0.5s
 }
 .strip-info:hover span {
-    color: orange;
+    color: var(--main-accent-color);
     cursor: pointer;
 }
 /* --------------- NAVIGATION ---------------- */
@@ -172,7 +179,7 @@ a:hover::after {
     height: auto;
     margin: 20px 10px 10px 10px;
     border: none;
-    background-color: orange;
+    background-color: var(--main-accent-color);
     color: white;
     cursor: pointer;
     font-weight: bold;
@@ -199,7 +206,7 @@ a:hover::after {
     padding: 80px 150px;
 }
 .conditions-strip i {
-    color: orange;
+    color: var(--main-accent-color);
 }
 .conditions-strip h2 {
     text-align: center;
@@ -236,7 +243,7 @@ a:hover::after {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #FFC350;
+  background-color: var(--main-accent-color);
   border-radius: 0 4px 0 32px;
 }
 .go-arrow {
@@ -263,7 +270,7 @@ a:hover::after {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #FFC350;
+    background: var(--main-accent-color);
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -316,7 +323,7 @@ a:hover::after {
     transition: 0.4 ease all;
 }
 .testimonial-strip i:hover {
-    color: orange;
+    color: var(--main-accent-color);
     transition: 0.4s;
     cursor: pointer;
 }
@@ -356,7 +363,7 @@ a:hover::after {
     text-align: center;
 }
 .insurance-strip i {
-    color: orange;
+    color: var(--main-accent-color);
 }
 .insurance-strip p {
     padding: 0 15px;
@@ -381,13 +388,20 @@ a:hover::after {
 }
 /* -------------- CONTACT FORM ----------------- */
 .form-strip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 50px 0;
+    background: #F6F6F6;
 }
-.form-strip h2 {
-    color: #eee;
+.form-strip i {
+    font-size: 2rem;
+    color: var(--main-accent-color);
+}
+.form-strip p {
+    margin: 0;
     text-align: center;
-    font-weight: thin;
-    font-size: 2.25rem;
 }
 .contact-form {
     display: flex;
@@ -397,43 +411,53 @@ a:hover::after {
     color: white;
 }
 fieldset {
-    width: 500px;
+    width: 800px;
     padding: 0;
     margin: 0;
     border: none;
 }
 .fieldset-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.fieldset-wrapper div {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 45%;
+    justify-content: center;
+}
+.name-email {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.name, .email {
+    width: 98%;
+    margin: 0 10px;
+}
+.phone-location {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.phone, .location {
+    width: 98%;
+    margin: 0 10px;
 }
 input, select, textarea {
     width: 100%;
-    border: none;
-    background: none;
+    border: 1px solid #DDD;
+    background: white;
     outline: none;
-    color: white;
+    height: 35px;
+    color: rgba(0,0,0,0.8);
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 5px;
 }
 .text-area {
-    width: 95%;
-}
-input, select, textarea {
-    border-bottom: 1px solid white;
-    height: 40px;
-    color: #ccc;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    width: 98%;
+    height: 80px;
+    margin: 0 10px;
 }
 input::placeholder, select::placeholder, textarea::placeholder {
-    color: #ccc;
+    color:rgba(0,0,0,0.8);
 }
 label {
     visibility: hidden;
@@ -446,21 +470,20 @@ label {
     width: 100%;
 }
 .form-button {
-    width: 150px;
-    height: 60px;
+    width: 210px;
+    height: 35px;
     margin: 20px;
-    background: rgb(228, 171, 65);
+    background: var(--main-accent-color);
     color: white;
-    font-weight: bold;
-    transition: 0.4s ease all;
-}
-.form-button:hover {
-    background: none;
-    color: #ccc;
-    cursor: pointer;
+    font-weight: bolder;
     font-size: 0.8rem;
-    border: 1px solid white;
+    transition: 0.4s ease all;
+    border-radius: 7px;
 }
+
+
+
+
 /* -------------- FOOTER ------------ */
 .footer {
     width: 100%;
@@ -485,7 +508,7 @@ label {
     width: 100%;
 }
 .footer a:hover {
-    color: orange;
+    color: var(--main-accent-color)e;
 }
 .footer-top {
     min-width: 100%;
@@ -516,7 +539,7 @@ label {
     margin: 0 10px;
 }
 .footer-social i:hover {
-    color: orange;
+    color: var(--main-accent-color);
 }
 .business-location {
     width: 50%;
@@ -640,7 +663,7 @@ label {
     }
     .card1 i {
         display: flex;
-        color: orange;
+        color: var(--main-accent-color);
         transform: scale(1.1);
     }
     .card1:hover h3 {
@@ -669,6 +692,10 @@ label {
     .insurance-carousel i {
         width: 110px;
         height: 70px;
+    }
+    /* Contact Form */
+    fieldset {
+        width: 600px;
     }
     /* Footer */
     .footer-top {
@@ -762,7 +789,7 @@ label {
         content: '';
         width: 0;
         height: 2px;
-        background: orange;
+        background: var(--main-accent-color);
         transition: width .6s;
         position: absolute;
         left: 25%;
@@ -771,7 +798,7 @@ label {
         transition: 0.5s ease all;
     }
     .mobileLink:hover {
-        color: orange;
+        color: var(--main-accent-color);
     }
     .mobileLink:hover::after {
         width: 50%;
@@ -842,10 +869,8 @@ label {
     }
     /* Contact Form */
     fieldset {
-        width: 300px;
-    }
-    /* Footer */
-    
+        width: 400px;
+    }    
 }
 @media only screen and (max-width: 460px) {
     .top-strip {
@@ -862,7 +887,36 @@ label {
     .about-strip {
         padding: 75px 20px;
     }
+    /* Contact Form */
+    fieldset {
+        width: 300px;
+    }
+    .name-email, .phone-location {
+        flex-direction: column;
+        align-items: center;
+    }
+    input, select {
+        margin: 0;
+        transform: translateX(-3px);
+        border-radius: 7px;
+        height: 40px;
+    }
+    textarea {
+        border-radius: 7px;
+    }
+    .name, .email, .phone, .location, .text-area {
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 340px) {
-    /* Footer */
+    /* Contact */
+    .form-strip p {
+        width: 80%;
+    }
+    fieldset {
+        width: 250px;
+    }
+    input, select {
+        transform: translateX(-3px);
+    }
 }
