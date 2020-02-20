@@ -470,6 +470,7 @@ label {
     width: 100%;
 }
 .form-button {
+    -webkit-appearance: none;
     width: 210px;
     height: 35px;
     margin: 20px;
