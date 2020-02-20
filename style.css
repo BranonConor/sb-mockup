@@ -42,11 +42,6 @@ a:hover::after {
     transition: 0.25s ease all;
     opacity: 1;
 }
-h1 {
-    font-size: 3rem;
-    padding: 0;
-    margin: 0;
-}
 /* ----------------- TOP STRIP ------------------ */
 .top-strip {
     display: flex;
@@ -386,7 +381,6 @@ h1 {
 }
 /* -------------- CONTACT FORM ----------------- */
 .form-strip {
-    background: #343434;
     padding: 50px 0;
 }
 .form-strip h2 {
@@ -453,7 +447,6 @@ label {
 }
 .form-button {
     width: 150px;
-    border: 1px solid white;
     height: 60px;
     margin: 20px;
     background: rgb(228, 171, 65);
@@ -465,67 +458,92 @@ label {
     background: none;
     color: #ccc;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid white;
 }
 /* -------------- FOOTER ------------ */
-.footer-top {
-    width: 100%;
-    height: 75px;
-    background: #eee;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-top img {
-    width: 60px;
-    height: 60px;
-}
 .footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
-    background-color: #343434;
     padding: 20px 0;
 }
-.footer div {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.footer a, .footer p {
-    color: white;
+.footer p {
     font-size: 0.8rem;
 }
-.footer-info {
-    text-align: left;
-    align-items: flex-start;
+.footer-top {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.footer .footer-social {
+.business-info {
+    width: 50%;
+    height: 400px;
+    background-color: #4B4B4B;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    justify-content: center;
+}
+.business-info h4 {
+    margin: 2px;
+}
+.business-info p {
+    color: #bbb;
+    margin: 2px;
+}
+.footer-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 13px;
 }
 .footer-social i {
-    font-size: 1.5rem;
-    transition: 0.3s ease all;
-}
-.footer-social a::after {
-    display: none;
+    color: white;
+    font-size: 2rem;
+    margin: 0 10px;
 }
 .footer-social i:hover {
     color: orange;
 }
-.footer-office p {
-    text-align: right;
+.footer-social a::after {
+    display: none;
 }
-.footer .footer-title {
-    letter-spacing: 3px;
-    color: orange;
+.business-location {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+.map {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease all;
+}
+.map {
+    width: 100%;
+    height: 100%;
+    background-image: url(map-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.map:hover {
+    transform: scale(1.1);
+}
+.business-location a::after {
+    display: none;
+}
+.footer-bottom {
+    height: 50px;
+    width: 100%;
+    background-color: #373737;
+}
+
 
 
 /* ---------------- MEDIA QUERIES ----------------- */
@@ -542,6 +560,15 @@ label {
     /* Conditions Treated */
     .conditions-strip {
         padding: 100px;
+    }
+    /* Footer */
+    .business-location {
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 300px;
+    }
+    .business-info {
+        height: 300px;
     }
 }
 @media only screen and (max-width: 950px) {
@@ -620,15 +647,18 @@ label {
         height: 70px;
     }
     /* Footer */
-    .footer a, .footer p {
-        color: white;
-        font-size: 0.6rem;
+    .footer-top {
+        flex-direction: column;
     }
-    .footer-social {
-        
+    .business-location {
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 100%;
+        height: 300px;
     }
-    .footer-social i {
-        font-size: 1.2rem;
+    .business-info {
+        width: 100%;
+        height: 300px;
     }
 }
 @media only screen and (max-width: 640px) {
@@ -768,13 +798,6 @@ label {
         width: 300px;
     }
     /* Footer */
-    .footer {
-        padding: 20px 10px;
-    }
-    .footer .footer-social {
-        display: block;
-        padding: 0 20px;
-    }
     
 }
 @media only screen and (max-width: 460px) {
@@ -795,8 +818,4 @@ label {
 }
 @media only screen and (max-width: 340px) {
     /* Footer */
-    .footer div {
-        justify-content: flex-start;
-        height: 150px;
-    }
 }
