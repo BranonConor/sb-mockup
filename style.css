@@ -903,7 +903,7 @@ label {
         font-size: 1rem;
     }
     .revealNavMobile {
-        height: 45vh;
+        height: 35vh;
     }
     /* About Strip */
     .about-strip {
@@ -931,6 +931,9 @@ label {
     }
 }
 @media only screen and (max-width: 340px) {
+    .revealNavMobile {
+        height: 40vh;
+    }
     /* Contact */
     .form-strip p {
         width: 80%;
