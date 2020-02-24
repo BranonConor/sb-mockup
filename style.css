@@ -207,8 +207,6 @@ a:hover::after {
 }
 .thin-strip button:hover {
     transform: scale(1.1);
-    background-color: #eee;
-    color: var(--main-accent-color);
 }
 
 /* ----------- ABOUT STRIP ------------- */
@@ -509,7 +507,6 @@ label {
 }
 .form-button:hover {
     transform: scale(1.1);
-    background-color: #343434;
 }
 
 
