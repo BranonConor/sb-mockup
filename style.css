@@ -203,6 +203,7 @@ a:hover::after {
     border: none;
     border-radius: 7px;
     cursor: pointer;
+    outline: none;
 }
 .thin-strip button:hover {
     transform: scale(1.1);
